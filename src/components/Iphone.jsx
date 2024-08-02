@@ -12,7 +12,7 @@ import * as THREE from "three";
 
 function Model(props) {
   const { nodes, materials } = useGLTF(
-    "/iphone-clone-website/models/scene.glb",
+    "https://saroshfarhan.github.io/iphone-clone-website/iphone-clone-website/models/scene.glb",
   );
 
   const texture = useTexture(props.item.img);
@@ -260,4 +260,6 @@ function Model(props) {
 
 export default Model;
 
-useGLTF.preload("/iphone-clone-website/models/scene.glb");
+useGLTF.preload(
+  "https://saroshfarhan.github.io/iphone-clone-website/iphone-clone-website/models/scene.glb",
+);
